@@ -8,6 +8,8 @@ target 'JibSpaceX' do
   # Pods for JibSpaceX
   pod "Alamofire"
   pod "SDWebImage"
+  pod "RxSwift"
+  pod "ObjectMapper"
 
   target 'JibSpaceXTests' do
     inherit! :search_paths

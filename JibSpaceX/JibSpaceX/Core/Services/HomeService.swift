@@ -12,13 +12,13 @@ import Alamofire
 protocol HomeServiceProtocol {
     
     // MARK: - Home page items -
-    func getHomeItems(page: Int, completion: @escaping (Dictionary<String, Any>?, Error?) -> Void)
+    func getHomeItems(completion: @escaping (Dictionary<String, Any>?, Error?) -> Void)
 
 }
 
 class HomeService: HomeServiceProtocol {
     
-    func getHomeItems(page: Int, completion: @escaping (Dictionary<String, Any>?, Error?) -> Void) {
+    func getHomeItems(completion: @escaping (Dictionary<String, Any>?, Error?) -> Void) {
         // check for internet connection / load cache before request
 
         guard let url = URL(string: Constants.baseUrl + Endpoint.homeEndpoints.homeItemsEndpoint) else {
