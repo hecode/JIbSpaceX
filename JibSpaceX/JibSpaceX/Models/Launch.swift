@@ -12,6 +12,7 @@ import ObjectMapper
 class Launch: Mappable {
     
     var id: String = ""
+    var name: String = ""
     var launchNumber: Int = 0
     var details: String = ""
     var date: Date?
@@ -27,6 +28,7 @@ class Launch: Mappable {
     
     func mapping(map: Map) {
         id <- map["id"]
+        name <- map["name"]
         launchNumber <- map["flight_number"]
         details <- map["details"]
         date <- (map["date_unix"], DateTransform())
