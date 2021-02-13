@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */; };
+		7EF659F125D87B83007EDFD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659F025D87B83007EDFD8 /* ViewController.swift */; };
+		7EF659F425D87B84007EDFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F225D87B84007EDFD8 /* Main.storyboard */; };
+		7EF659F625D87B86007EDFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F525D87B86007EDFD8 /* Assets.xcassets */; };
+		7EF659F925D87B86007EDFD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F725D87B86007EDFD8 /* LaunchScreen.storyboard */; };
+		7EF65A0425D87B86007EDFD8 /* JibSpaceXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF65A0325D87B86007EDFD8 /* JibSpaceXTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EF65A0025D87B86007EDFD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EF659E125D87B83007EDFD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EF659E825D87B83007EDFD8;
+			remoteInfo = JibSpaceX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7EF659E925D87B83007EDFD8 /* JibSpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JibSpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EF659F025D87B83007EDFD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EF659F325D87B84007EDFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EF659F525D87B86007EDFD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EF659F825D87B86007EDFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EF659FA25D87B86007EDFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF659FF25D87B86007EDFD8 /* JibSpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JibSpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF65A0325D87B86007EDFD8 /* JibSpaceXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JibSpaceXTests.swift; sourceTree = "<group>"; };
+		7EF65A0525D87B86007EDFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EF659E625D87B83007EDFD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF659FC25D87B86007EDFD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EF659E025D87B83007EDFD8 = {
+			isa = PBXGroup;
+			children = (
+				7EF659EB25D87B83007EDFD8 /* JibSpaceX */,
+				7EF65A0225D87B86007EDFD8 /* JibSpaceXTests */,
+				7EF659EA25D87B83007EDFD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EF659EA25D87B83007EDFD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EF659E925D87B83007EDFD8 /* JibSpaceX.app */,
+				7EF659FF25D87B86007EDFD8 /* JibSpaceXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EF659EB25D87B83007EDFD8 /* JibSpaceX */ = {
+			isa = PBXGroup;
+			children = (
+				7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */,
+				7EF659F025D87B83007EDFD8 /* ViewController.swift */,
+				7EF659F225D87B84007EDFD8 /* Main.storyboard */,
+				7EF659F525D87B86007EDFD8 /* Assets.xcassets */,
+				7EF659F725D87B86007EDFD8 /* LaunchScreen.storyboard */,
+				7EF659FA25D87B86007EDFD8 /* Info.plist */,
+			);
+			path = JibSpaceX;
+			sourceTree = "<group>";
+		};
+		7EF65A0225D87B86007EDFD8 /* JibSpaceXTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EF65A0325D87B86007EDFD8 /* JibSpaceXTests.swift */,
+				7EF65A0525D87B86007EDFD8 /* Info.plist */,
+			);
+			path = JibSpaceXTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EF659E825D87B83007EDFD8 /* JibSpaceX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EF65A0825D87B86007EDFD8 /* Build configuration list for PBXNativeTarget "JibSpaceX" */;
+			buildPhases = (
+				7EF659E525D87B83007EDFD8 /* Sources */,
+				7EF659E625D87B83007EDFD8 /* Frameworks */,
+				7EF659E725D87B83007EDFD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JibSpaceX;
+			productName = JibSpaceX;
+			productReference = 7EF659E925D87B83007EDFD8 /* JibSpaceX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EF659FE25D87B86007EDFD8 /* JibSpaceXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EF65A0B25D87B86007EDFD8 /* Build configuration list for PBXNativeTarget "JibSpaceXTests" */;
+			buildPhases = (
+				7EF659FB25D87B86007EDFD8 /* Sources */,
+				7EF659FC25D87B86007EDFD8 /* Frameworks */,
+				7EF659FD25D87B86007EDFD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EF65A0125D87B86007EDFD8 /* PBXTargetDependency */,
+			);
+			name = JibSpaceXTests;
+			productName = JibSpaceXTests;
+			productReference = 7EF659FF25D87B86007EDFD8 /* JibSpaceXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EF659E125D87B83007EDFD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ibrahim Beltagy";
+				TargetAttributes = {
+					7EF659E825D87B83007EDFD8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					7EF659FE25D87B86007EDFD8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7EF659E825D87B83007EDFD8;
+					};
+				};
+			};
+			buildConfigurationList = 7EF659E425D87B83007EDFD8 /* Build configuration list for PBXProject "JibSpaceX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EF659E025D87B83007EDFD8;
+			productRefGroup = 7EF659EA25D87B83007EDFD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EF659E825D87B83007EDFD8 /* JibSpaceX */,
+				7EF659FE25D87B86007EDFD8 /* JibSpaceXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EF659E725D87B83007EDFD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF659F925D87B86007EDFD8 /* LaunchScreen.storyboard in Resources */,
+				7EF659F625D87B86007EDFD8 /* Assets.xcassets in Resources */,
+				7EF659F425D87B84007EDFD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF659FD25D87B86007EDFD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EF659E525D87B83007EDFD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF659F125D87B83007EDFD8 /* ViewController.swift in Sources */,
+				7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF659FB25D87B86007EDFD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF65A0425D87B86007EDFD8 /* JibSpaceXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EF65A0125D87B86007EDFD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EF659E825D87B83007EDFD8 /* JibSpaceX */;
+			targetProxy = 7EF65A0025D87B86007EDFD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EF659F225D87B84007EDFD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EF659F325D87B84007EDFD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EF659F725D87B86007EDFD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EF659F825D87B86007EDFD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EF65A0625D87B86007EDFD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EF65A0725D87B86007EDFD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EF65A0925D87B86007EDFD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JibSpaceX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Beltagy.JibSpaceX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EF65A0A25D87B86007EDFD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JibSpaceX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Beltagy.JibSpaceX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7EF65A0C25D87B86007EDFD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JibSpaceXTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Beltagy.JibSpaceXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JibSpaceX.app/JibSpaceX";
+			};
+			name = Debug;
+		};
+		7EF65A0D25D87B86007EDFD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JibSpaceXTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Beltagy.JibSpaceXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JibSpaceX.app/JibSpaceX";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EF659E425D87B83007EDFD8 /* Build configuration list for PBXProject "JibSpaceX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF65A0625D87B86007EDFD8 /* Debug */,
+				7EF65A0725D87B86007EDFD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EF65A0825D87B86007EDFD8 /* Build configuration list for PBXNativeTarget "JibSpaceX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF65A0925D87B86007EDFD8 /* Debug */,
+				7EF65A0A25D87B86007EDFD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EF65A0B25D87B86007EDFD8 /* Build configuration list for PBXNativeTarget "JibSpaceXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF65A0C25D87B86007EDFD8 /* Debug */,
+				7EF65A0D25D87B86007EDFD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EF659E125D87B83007EDFD8 /* Project object */;
+}
