@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		25A720177774FE0EC8903A04 /* Pods_JibSpaceXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C745A9693B0AB8356CB6D7 /* Pods_JibSpaceXTests.framework */; };
 		46C7985300721B8E6412727F /* Pods_JibSpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F006C7D0127F10AB75F8FE /* Pods_JibSpaceX.framework */; };
+		7EA1EE1A25D8818A00A2BE06 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE1925D8818A00A2BE06 /* Endpoint.swift */; };
+		7EA1EE1C25D881C600A2BE06 /* HomeEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE1B25D881C600A2BE06 /* HomeEndpoints.swift */; };
+		7EA1EE1E25D8828900A2BE06 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE1D25D8828800A2BE06 /* HomeService.swift */; };
+		7EA1EE2125D8837800A2BE06 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE2025D8837800A2BE06 /* Constants.swift */; };
+		7EA1EE2425D8867500A2BE06 /* UITableView+DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE2325D8867500A2BE06 /* UITableView+DefaultCell.swift */; };
+		7EA1EE2725D8869000A2BE06 /* UITableView+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE2625D8869000A2BE06 /* UITableView+ActivityIndicator.swift */; };
+		7EA1EE2925D8869F00A2BE06 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE2825D8869F00A2BE06 /* UITableView+EmptyMessage.swift */; };
 		7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */; };
-		7EF659F125D87B83007EDFD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659F025D87B83007EDFD8 /* ViewController.swift */; };
+		7EF659F125D87B83007EDFD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659F025D87B83007EDFD8 /* HomeViewController.swift */; };
 		7EF659F425D87B84007EDFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F225D87B84007EDFD8 /* Main.storyboard */; };
 		7EF659F625D87B86007EDFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F525D87B86007EDFD8 /* Assets.xcassets */; };
 		7EF659F925D87B86007EDFD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F725D87B86007EDFD8 /* LaunchScreen.storyboard */; };
@@ -31,9 +38,16 @@
 		105B3D77A8D8E2FFE394DB6F /* Pods-JibSpaceXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibSpaceXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JibSpaceXTests/Pods-JibSpaceXTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A08C5A91B6D4EDB6F4A66AE /* Pods-JibSpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibSpaceX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JibSpaceX/Pods-JibSpaceX.debug.xcconfig"; sourceTree = "<group>"; };
 		1E273357D9FA7FDCC4F6E6E1 /* Pods-JibSpaceXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibSpaceXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JibSpaceXTests/Pods-JibSpaceXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EA1EE1925D8818A00A2BE06 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7EA1EE1B25D881C600A2BE06 /* HomeEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoints.swift; sourceTree = "<group>"; };
+		7EA1EE1D25D8828800A2BE06 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		7EA1EE2025D8837800A2BE06 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7EA1EE2325D8867500A2BE06 /* UITableView+DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+DefaultCell.swift"; sourceTree = "<group>"; };
+		7EA1EE2625D8869000A2BE06 /* UITableView+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		7EA1EE2825D8869F00A2BE06 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
 		7EF659E925D87B83007EDFD8 /* JibSpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JibSpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EF659F025D87B83007EDFD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EF659F025D87B83007EDFD8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7EF659F325D87B84007EDFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EF659F525D87B86007EDFD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EF659F825D87B86007EDFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +91,59 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7EA1EE1625D8814C00A2BE06 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE1725D8816200A2BE06 /* Endpoints */,
+				7EA1EE1825D8816B00A2BE06 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7EA1EE1725D8816200A2BE06 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE1925D8818A00A2BE06 /* Endpoint.swift */,
+				7EA1EE1B25D881C600A2BE06 /* HomeEndpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		7EA1EE1825D8816B00A2BE06 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE1D25D8828800A2BE06 /* HomeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7EA1EE1F25D8836200A2BE06 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE2025D8837800A2BE06 /* Constants.swift */,
+				7EA1EE2225D8865500A2BE06 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7EA1EE2225D8865500A2BE06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE2525D8867E00A2BE06 /* UITableView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7EA1EE2525D8867E00A2BE06 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE2325D8867500A2BE06 /* UITableView+DefaultCell.swift */,
+				7EA1EE2625D8869000A2BE06 /* UITableView+ActivityIndicator.swift */,
+				7EA1EE2825D8869F00A2BE06 /* UITableView+EmptyMessage.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		7EF659E025D87B83007EDFD8 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */,
-				7EF659F025D87B83007EDFD8 /* ViewController.swift */,
+				7EA1EE1625D8814C00A2BE06 /* Core */,
+				7EA1EE1F25D8836200A2BE06 /* Helpers */,
+				7EF659F025D87B83007EDFD8 /* HomeViewController.swift */,
 				7EF659F225D87B84007EDFD8 /* Main.storyboard */,
 				7EF659F525D87B86007EDFD8 /* Assets.xcassets */,
 				7EF659F725D87B86007EDFD8 /* LaunchScreen.storyboard */,
@@ -291,8 +360,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF659F125D87B83007EDFD8 /* ViewController.swift in Sources */,
+				7EA1EE2425D8867500A2BE06 /* UITableView+DefaultCell.swift in Sources */,
+				7EA1EE2925D8869F00A2BE06 /* UITableView+EmptyMessage.swift in Sources */,
+				7EF659F125D87B83007EDFD8 /* HomeViewController.swift in Sources */,
+				7EA1EE1A25D8818A00A2BE06 /* Endpoint.swift in Sources */,
 				7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */,
+				7EA1EE2725D8869000A2BE06 /* UITableView+ActivityIndicator.swift in Sources */,
+				7EA1EE1C25D881C600A2BE06 /* HomeEndpoints.swift in Sources */,
+				7EA1EE1E25D8828900A2BE06 /* HomeService.swift in Sources */,
+				7EA1EE2125D8837800A2BE06 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
