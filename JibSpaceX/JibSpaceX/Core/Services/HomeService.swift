@@ -37,7 +37,11 @@ class HomeService: HomeServiceProtocol {
                 }
                 
                 let launches = Mapper<Launch>().mapArray(JSONArray: value)
-                completion(launches, nil)
+                
+                // filtered to only successful and within past 3 years as per requirements
+                let filteredLaunches = launches.filter { $0.successful == true && yearsBetweenDates(startDate: $0.date, endDate: Date()) < 3 }
+                
+                completion(filteredLaunches, nil)
                 
             case .failure:
                 completion(nil, response.error)
