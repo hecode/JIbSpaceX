@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25A720177774FE0EC8903A04 /* Pods_JibSpaceXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C745A9693B0AB8356CB6D7 /* Pods_JibSpaceXTests.framework */; };
+		46C7985300721B8E6412727F /* Pods_JibSpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F006C7D0127F10AB75F8FE /* Pods_JibSpaceX.framework */; };
 		7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */; };
 		7EF659F125D87B83007EDFD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659F025D87B83007EDFD8 /* ViewController.swift */; };
 		7EF659F425D87B84007EDFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F225D87B84007EDFD8 /* Main.storyboard */; };
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		105B3D77A8D8E2FFE394DB6F /* Pods-JibSpaceXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibSpaceXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JibSpaceXTests/Pods-JibSpaceXTests.release.xcconfig"; sourceTree = "<group>"; };
+		1A08C5A91B6D4EDB6F4A66AE /* Pods-JibSpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibSpaceX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JibSpaceX/Pods-JibSpaceX.debug.xcconfig"; sourceTree = "<group>"; };
+		1E273357D9FA7FDCC4F6E6E1 /* Pods-JibSpaceXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibSpaceXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JibSpaceXTests/Pods-JibSpaceXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EF659E925D87B83007EDFD8 /* JibSpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JibSpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EF659F025D87B83007EDFD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		7EF659FF25D87B86007EDFD8 /* JibSpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JibSpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF65A0325D87B86007EDFD8 /* JibSpaceXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JibSpaceXTests.swift; sourceTree = "<group>"; };
 		7EF65A0525D87B86007EDFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F006C7D0127F10AB75F8FE /* Pods_JibSpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JibSpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40EFD28EB116046F91D5F77 /* Pods-JibSpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibSpaceX.release.xcconfig"; path = "Pods/Target Support Files/Pods-JibSpaceX/Pods-JibSpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		E3C745A9693B0AB8356CB6D7 /* Pods_JibSpaceXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JibSpaceXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C7985300721B8E6412727F /* Pods_JibSpaceX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A720177774FE0EC8903A04 /* Pods_JibSpaceXTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06F2732523D4011FA1B2C2BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A08C5A91B6D4EDB6F4A66AE /* Pods-JibSpaceX.debug.xcconfig */,
+				A40EFD28EB116046F91D5F77 /* Pods-JibSpaceX.release.xcconfig */,
+				1E273357D9FA7FDCC4F6E6E1 /* Pods-JibSpaceXTests.debug.xcconfig */,
+				105B3D77A8D8E2FFE394DB6F /* Pods-JibSpaceXTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7EF659E025D87B83007EDFD8 = {
 			isa = PBXGroup;
 			children = (
 				7EF659EB25D87B83007EDFD8 /* JibSpaceX */,
 				7EF65A0225D87B86007EDFD8 /* JibSpaceXTests */,
 				7EF659EA25D87B83007EDFD8 /* Products */,
+				06F2732523D4011FA1B2C2BE /* Pods */,
+				8DCC47CF2301996448F99F2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +119,15 @@
 			path = JibSpaceXTests;
 			sourceTree = "<group>";
 		};
+		8DCC47CF2301996448F99F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90F006C7D0127F10AB75F8FE /* Pods_JibSpaceX.framework */,
+				E3C745A9693B0AB8356CB6D7 /* Pods_JibSpaceXTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EF65A0825D87B86007EDFD8 /* Build configuration list for PBXNativeTarget "JibSpaceX" */;
 			buildPhases = (
+				A3138313529109EBE39E154A /* [CP] Check Pods Manifest.lock */,
 				7EF659E525D87B83007EDFD8 /* Sources */,
 				7EF659E625D87B83007EDFD8 /* Frameworks */,
 				7EF659E725D87B83007EDFD8 /* Resources */,
+				B4D8BEE2F5B995B2E4F7DABC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EF65A0B25D87B86007EDFD8 /* Build configuration list for PBXNativeTarget "JibSpaceXTests" */;
 			buildPhases = (
+				D7D90BE46B81F3F69EF473C2 /* [CP] Check Pods Manifest.lock */,
 				7EF659FB25D87B86007EDFD8 /* Sources */,
 				7EF659FC25D87B86007EDFD8 /* Frameworks */,
 				7EF659FD25D87B86007EDFD8 /* Resources */,
@@ -191,6 +226,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3138313529109EBE39E154A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JibSpaceX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D8BEE2F5B995B2E4F7DABC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JibSpaceX/Pods-JibSpaceX-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JibSpaceX/Pods-JibSpaceX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7D90BE46B81F3F69EF473C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JibSpaceXTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7EF659E525D87B83007EDFD8 /* Sources */ = {
@@ -356,6 +450,7 @@
 		};
 		7EF65A0925D87B86007EDFD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A08C5A91B6D4EDB6F4A66AE /* Pods-JibSpaceX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,6 +468,7 @@
 		};
 		7EF65A0A25D87B86007EDFD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40EFD28EB116046F91D5F77 /* Pods-JibSpaceX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +486,7 @@
 		};
 		7EF65A0C25D87B86007EDFD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E273357D9FA7FDCC4F6E6E1 /* Pods-JibSpaceXTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -411,6 +508,7 @@
 		};
 		7EF65A0D25D87B86007EDFD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 105B3D77A8D8E2FFE394DB6F /* Pods-JibSpaceXTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

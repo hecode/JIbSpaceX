@@ -1,0 +1,6 @@
+framework module Pods_JibSpaceX {
+  umbrella header "Pods-JibSpaceX-umbrella.h"
+
+  export *
+  module * { export * }
+}
