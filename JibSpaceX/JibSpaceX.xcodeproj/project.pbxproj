@@ -22,8 +22,6 @@
 		7EA1EE3725D89BCE00A2BE06 /* ListingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3525D89BCE00A2BE06 /* ListingItemTableViewCell.swift */; };
 		7EA1EE3825D89BCE00A2BE06 /* ListingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3625D89BCE00A2BE06 /* ListingItemTableViewCell.xib */; };
 		7EA1EE3C25D8B27A00A2BE06 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3B25D8B27A00A2BE06 /* HomeViewModel.swift */; };
-		7EA1EE3E25D8B2B700A2BE06 /* AbstractViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3D25D8B2B700A2BE06 /* AbstractViewModel.swift */; };
-		7EA1EE4025D8B2E600A2BE06 /* StatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3F25D8B2E600A2BE06 /* StatusEnum.swift */; };
 		7EA1EE4325D8B6A500A2BE06 /* HomeItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4225D8B6A500A2BE06 /* HomeItemDetailsViewController.swift */; };
 		7EA1EE4525D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4425D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift */; };
 		7EA1EE4825D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4725D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift */; };
@@ -31,12 +29,13 @@
 		7EA1EE4C25D8D74B00A2BE06 /* HomeItemDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4B25D8D74B00A2BE06 /* HomeItemDetailsService.swift */; };
 		7EA1EE4E25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4D25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift */; };
 		7EA1EE5025D911AB00A2BE06 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4F25D911AA00A2BE06 /* Errors.swift */; };
+		7EA1EE5325D94DA400A2BE06 /* LaunchUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE5225D94DA400A2BE06 /* LaunchUnitTests.swift */; };
+		7EA1EE5525D94EEF00A2BE06 /* LaunchesJSONs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EA1EE5425D94EEF00A2BE06 /* LaunchesJSONs.plist */; };
 		7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */; };
 		7EF659F125D87B83007EDFD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659F025D87B83007EDFD8 /* HomeViewController.swift */; };
 		7EF659F425D87B84007EDFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F225D87B84007EDFD8 /* Main.storyboard */; };
 		7EF659F625D87B86007EDFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F525D87B86007EDFD8 /* Assets.xcassets */; };
 		7EF659F925D87B86007EDFD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F725D87B86007EDFD8 /* LaunchScreen.storyboard */; };
-		7EF65A0425D87B86007EDFD8 /* JibSpaceXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF65A0325D87B86007EDFD8 /* JibSpaceXTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +65,6 @@
 		7EA1EE3525D89BCE00A2BE06 /* ListingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemTableViewCell.swift; sourceTree = "<group>"; };
 		7EA1EE3625D89BCE00A2BE06 /* ListingItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingItemTableViewCell.xib; sourceTree = "<group>"; };
 		7EA1EE3B25D8B27A00A2BE06 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		7EA1EE3D25D8B2B700A2BE06 /* AbstractViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModel.swift; sourceTree = "<group>"; };
-		7EA1EE3F25D8B2E600A2BE06 /* StatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEnum.swift; sourceTree = "<group>"; };
 		7EA1EE4225D8B6A500A2BE06 /* HomeItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsViewController.swift; sourceTree = "<group>"; };
 		7EA1EE4425D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsViewModel.swift; sourceTree = "<group>"; };
 		7EA1EE4725D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+FromToChecker.swift"; sourceTree = "<group>"; };
@@ -75,6 +72,8 @@
 		7EA1EE4B25D8D74B00A2BE06 /* HomeItemDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsService.swift; sourceTree = "<group>"; };
 		7EA1EE4D25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsEndpoints.swift; sourceTree = "<group>"; };
 		7EA1EE4F25D911AA00A2BE06 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		7EA1EE5225D94DA400A2BE06 /* LaunchUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUnitTests.swift; sourceTree = "<group>"; };
+		7EA1EE5425D94EEF00A2BE06 /* LaunchesJSONs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LaunchesJSONs.plist; sourceTree = "<group>"; };
 		7EF659E925D87B83007EDFD8 /* JibSpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JibSpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EF659F025D87B83007EDFD8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +82,6 @@
 		7EF659F825D87B86007EDFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EF659FA25D87B86007EDFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EF659FF25D87B86007EDFD8 /* JibSpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JibSpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EF65A0325D87B86007EDFD8 /* JibSpaceXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JibSpaceXTests.swift; sourceTree = "<group>"; };
 		7EF65A0525D87B86007EDFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F006C7D0127F10AB75F8FE /* Pods_JibSpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JibSpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40EFD28EB116046F91D5F77 /* Pods-JibSpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibSpaceX.release.xcconfig"; path = "Pods/Target Support Files/Pods-JibSpaceX/Pods-JibSpaceX.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,8 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				7EA1EE2025D8837800A2BE06 /* Constants.swift */,
-				7EA1EE3D25D8B2B700A2BE06 /* AbstractViewModel.swift */,
-				7EA1EE3F25D8B2E600A2BE06 /* StatusEnum.swift */,
 				7EA1EE4F25D911AA00A2BE06 /* Errors.swift */,
 				7EA1EE3025D894F200A2BE06 /* DateHelpers.swift */,
 				7EA1EE3225D8983200A2BE06 /* Protocols */,
@@ -259,6 +255,15 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
+		7EA1EE5125D94D5E00A2BE06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE5225D94DA400A2BE06 /* LaunchUnitTests.swift */,
+				7EA1EE5425D94EEF00A2BE06 /* LaunchesJSONs.plist */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7EF659E025D87B83007EDFD8 = {
 			isa = PBXGroup;
 			children = (
@@ -299,7 +304,7 @@
 		7EF65A0225D87B86007EDFD8 /* JibSpaceXTests */ = {
 			isa = PBXGroup;
 			children = (
-				7EF65A0325D87B86007EDFD8 /* JibSpaceXTests.swift */,
+				7EA1EE5125D94D5E00A2BE06 /* Models */,
 				7EF65A0525D87B86007EDFD8 /* Info.plist */,
 			);
 			path = JibSpaceXTests;
@@ -370,6 +375,7 @@
 					};
 					7EF659FE25D87B86007EDFD8 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 7EF659E825D87B83007EDFD8;
 					};
 				};
@@ -409,6 +415,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA1EE5525D94EEF00A2BE06 /* LaunchesJSONs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,8 +503,6 @@
 				7EA1EE2425D8867500A2BE06 /* UITableView+DefaultCell.swift in Sources */,
 				7EA1EE2925D8869F00A2BE06 /* UITableView+EmptyMessage.swift in Sources */,
 				7EA1EE3725D89BCE00A2BE06 /* ListingItemTableViewCell.swift in Sources */,
-				7EA1EE4025D8B2E600A2BE06 /* StatusEnum.swift in Sources */,
-				7EA1EE3E25D8B2B700A2BE06 /* AbstractViewModel.swift in Sources */,
 				7EF659F125D87B83007EDFD8 /* HomeViewController.swift in Sources */,
 				7EA1EE1A25D8818A00A2BE06 /* Endpoint.swift in Sources */,
 				7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */,
@@ -518,7 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF65A0425D87B86007EDFD8 /* JibSpaceXTests.swift in Sources */,
+				7EA1EE5325D94DA400A2BE06 /* LaunchUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,6 +713,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JibSpaceXTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -718,6 +724,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Beltagy.JibSpaceXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JibSpaceX.app/JibSpaceX";
@@ -730,6 +737,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JibSpaceXTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
