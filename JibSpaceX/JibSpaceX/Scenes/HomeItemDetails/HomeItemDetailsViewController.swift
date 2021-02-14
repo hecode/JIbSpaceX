@@ -8,6 +8,8 @@
 
 import UIKit
 import ImageSlideshow
+import RxSwift
+import RxCocoa
 
 class HomeItemDetailsViewController: UIViewController {
     
@@ -18,11 +20,7 @@ class HomeItemDetailsViewController: UIViewController {
     
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
-    @IBAction func wikipediaAction(_ sender: UIButton) {
-        if let url = URL(string: homeItemDetailsViewModel.rocket?.wikipediaURL ?? "") {
-            UIApplication.shared.open(url)
-        }
-    }
+    let disposeBag = DisposeBag()
     
     let homeItemDetailsViewModel = HomeItemDetailsViewModel()
     
@@ -48,6 +46,12 @@ extension HomeItemDetailsViewController {
         title = "Rocket Details"
         
         homeItemDetailsViewModel.delegate = self
+        
+        wikipediaButton.rx.tap.subscribe(onNext: { _ in
+            if let url = URL(string: self.homeItemDetailsViewModel.rocket?.wikipediaURL ?? "") {
+                UIApplication.shared.open(url)
+            }
+        }).disposed(by: disposeBag)
     }
     
     func setupData() {

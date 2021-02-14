@@ -11,7 +11,7 @@ import ImageSlideshow
 
 class HomeItemDetailsViewModel: AbstractViewModel {
     var homeItemDetailsService: HomeItemDetailsService = HomeItemDetailsService()
-    
+        
     var rocketID: String = ""
     var rocket: Rocket? {
         didSet {
