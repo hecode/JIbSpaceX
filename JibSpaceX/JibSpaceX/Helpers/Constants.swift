@@ -17,7 +17,8 @@ struct Constants {
     // MARK: - Invalid Formats -
     // should be localized in an actual app
     static let genericAPIErrorMessage = "something went wrong"
-    
+    static let invalidDateFormat = "N/A"
+
     // MARK: - Storyboards -
     
     struct Storyboards {

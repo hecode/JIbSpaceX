@@ -15,5 +15,5 @@ protocol ListingItemCellProtocol {
     var launchNumber: Int { get }
     var details: String { get }
     var date: Date? { get }
-    var upcoming: Bool { get }
+    var upcoming: Bool? { get }
 }
