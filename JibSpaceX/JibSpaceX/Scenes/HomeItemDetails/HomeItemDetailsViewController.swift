@@ -28,11 +28,14 @@ class HomeItemDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         basicSetup()
+        
+        setupRx()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        activityIndicatorView.startAnimating()
         homeItemDetailsViewModel.loadRocket(id: homeItemDetailsViewModel.rocketID)
     }
     
@@ -44,21 +47,32 @@ extension HomeItemDetailsViewController {
     
     func basicSetup() {
         title = "Rocket Details"
-        
-        homeItemDetailsViewModel.delegate = self
-        
-        wikipediaButton.rx.tap.subscribe(onNext: { _ in
-            if let url = URL(string: self.homeItemDetailsViewModel.rocket?.wikipediaURL ?? "") {
+    }
+    
+    func setupRx() {
+        wikipediaButton.rx.tap.subscribe({ _ in
+            if let rocket = try? self.homeItemDetailsViewModel.rocket.value(), let url = URL(string: rocket.wikipediaURL) {
                 UIApplication.shared.open(url)
             }
         }).disposed(by: disposeBag)
+        
+        homeItemDetailsViewModel.rocket.map{$0.name}.bind(to: nameLabel.rx.text).disposed(by: disposeBag)
+        homeItemDetailsViewModel.rocket.map{$0.description}.bind(to: descriptionLabel.rx.text).disposed(by: disposeBag)
+        
+        // Will show a slideshow if there are multiple images.
+        homeItemDetailsViewModel.rocket.subscribe(onNext: { _ in
+            self.setupSlideshow()
+            self.activityIndicatorView.stopAnimating()
+        }, onError: { _ in
+            // this could be a general helper alert
+            let alert = UIAlertController(title: "Request Error", message: Constants.genericAPIErrorMessage, preferredStyle: UIAlertController.Style.alert)
+            let alertAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            alert.addAction(alertAction)
+            self.present(alert, animated: true, completion: nil) }
+        ).disposed(by: disposeBag)
     }
     
-    func setupData() {
-        nameLabel.text = homeItemDetailsViewModel.rocket?.name
-        descriptionLabel.text = homeItemDetailsViewModel.rocket?.description
-        
-        // Will show a slideshow if there are multiple images. at the moment in the api there is only one
+    func setupSlideshow() {
         imageSlideshow.setImageInputs(homeItemDetailsViewModel.media)
         
         imageSlideshow.isHidden = imageSlideshow.images.count == 0
@@ -67,38 +81,6 @@ extension HomeItemDetailsViewController {
         imageSlideshow.contentScaleMode = .scaleAspectFill
         imageSlideshow.circular = false
         imageSlideshow.pageIndicator?.view.isHidden = imageSlideshow.images.count == 1
-    }
-    
-}
-
-// MARK: - ViewModelUIDelegate -
-
-extension HomeItemDetailsViewController: ViewModelUIDelegate {
-    
-    func updateUI(data: Any?, status: StatusEnum?, actionSource: String?) {        
-        guard let status = status else { return }
-        
-        switch status {
-        case .fetching:
-            activityIndicatorView.startAnimating()
-            
-        case .success:
-            activityIndicatorView.stopAnimating()
-            setupData()
-            
-        case .error(let message):
-            activityIndicatorView.stopAnimating()
-            
-            let alert = UIAlertController(title: "Request Error", message: message, preferredStyle: UIAlertController.Style.alert)
-            let alertAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
-            alert.addAction(alertAction)
-            
-            self.present(alert, animated: true, completion: nil)
-            
-        default:
-            return
-        }
-        
     }
     
 }
