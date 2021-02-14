@@ -9,16 +9,16 @@
 import Foundation
 import ObjectMapper
 
-class Launch: Mappable {
+class Launch: Mappable, ListingItemCellProtocol {
     
     var id: String = ""
     var name: String = ""
     var launchNumber: Int = 0
     var details: String = ""
     var date: Date?
-    var upcoming = false
-    var successful = false
-    var rocketID = ""
+    var upcoming: Bool? = false
+    var successful: Bool = false
+    var rocketID: String = ""
 
     // MARK: - Mapping -
     

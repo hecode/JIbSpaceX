@@ -21,6 +21,12 @@
 		7EA1EE3425D8984800A2BE06 /* ListingItemCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3325D8984800A2BE06 /* ListingItemCellProtocol.swift */; };
 		7EA1EE3725D89BCE00A2BE06 /* ListingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3525D89BCE00A2BE06 /* ListingItemTableViewCell.swift */; };
 		7EA1EE3825D89BCE00A2BE06 /* ListingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3625D89BCE00A2BE06 /* ListingItemTableViewCell.xib */; };
+		7EA1EE3C25D8B27A00A2BE06 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3B25D8B27A00A2BE06 /* HomeViewModel.swift */; };
+		7EA1EE3E25D8B2B700A2BE06 /* AbstractViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3D25D8B2B700A2BE06 /* AbstractViewModel.swift */; };
+		7EA1EE4025D8B2E600A2BE06 /* StatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE3F25D8B2E600A2BE06 /* StatusEnum.swift */; };
+		7EA1EE4325D8B6A500A2BE06 /* HomeItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4225D8B6A500A2BE06 /* HomeItemDetailsViewController.swift */; };
+		7EA1EE4525D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4425D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift */; };
+		7EA1EE4825D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4725D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift */; };
 		7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */; };
 		7EF659F125D87B83007EDFD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659F025D87B83007EDFD8 /* HomeViewController.swift */; };
 		7EF659F425D87B84007EDFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F225D87B84007EDFD8 /* Main.storyboard */; };
@@ -55,6 +61,12 @@
 		7EA1EE3325D8984800A2BE06 /* ListingItemCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemCellProtocol.swift; sourceTree = "<group>"; };
 		7EA1EE3525D89BCE00A2BE06 /* ListingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemTableViewCell.swift; sourceTree = "<group>"; };
 		7EA1EE3625D89BCE00A2BE06 /* ListingItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingItemTableViewCell.xib; sourceTree = "<group>"; };
+		7EA1EE3B25D8B27A00A2BE06 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7EA1EE3D25D8B2B700A2BE06 /* AbstractViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModel.swift; sourceTree = "<group>"; };
+		7EA1EE3F25D8B2E600A2BE06 /* StatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEnum.swift; sourceTree = "<group>"; };
+		7EA1EE4225D8B6A500A2BE06 /* HomeItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsViewController.swift; sourceTree = "<group>"; };
+		7EA1EE4425D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsViewModel.swift; sourceTree = "<group>"; };
+		7EA1EE4725D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+FromToChecker.swift"; sourceTree = "<group>"; };
 		7EF659E925D87B83007EDFD8 /* JibSpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JibSpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EF659F025D87B83007EDFD8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				7EA1EE2025D8837800A2BE06 /* Constants.swift */,
+				7EA1EE3D25D8B2B700A2BE06 /* AbstractViewModel.swift */,
+				7EA1EE3F25D8B2E600A2BE06 /* StatusEnum.swift */,
 				7EA1EE3025D894F200A2BE06 /* DateHelpers.swift */,
 				7EA1EE3225D8983200A2BE06 /* Protocols */,
 				7EA1EE2225D8865500A2BE06 /* Extensions */,
@@ -141,6 +155,7 @@
 		7EA1EE2225D8865500A2BE06 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7EA1EE4625D8B8A800A2BE06 /* UIViewController */,
 				7EA1EE2525D8867E00A2BE06 /* UITableView */,
 			);
 			path = Extensions;
@@ -197,6 +212,41 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		7EA1EE3925D8B26000A2BE06 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE3A25D8B26900A2BE06 /* Home */,
+				7EA1EE4125D8B69400A2BE06 /* HomeItemDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7EA1EE3A25D8B26900A2BE06 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE3B25D8B27A00A2BE06 /* HomeViewModel.swift */,
+				7EF659F025D87B83007EDFD8 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7EA1EE4125D8B69400A2BE06 /* HomeItemDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE4425D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift */,
+				7EA1EE4225D8B6A500A2BE06 /* HomeItemDetailsViewController.swift */,
+			);
+			path = HomeItemDetails;
+			sourceTree = "<group>";
+		};
+		7EA1EE4625D8B8A800A2BE06 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EE4725D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		7EF659E025D87B83007EDFD8 = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +275,7 @@
 				7EA1EE1F25D8836200A2BE06 /* Helpers */,
 				7EA1EE2A25D88AE900A2BE06 /* Models */,
 				7EA1EE2D25D8904200A2BE06 /* ReusableUI */,
-				7EF659F025D87B83007EDFD8 /* HomeViewController.swift */,
+				7EA1EE3925D8B26000A2BE06 /* Scenes */,
 				7EF659F225D87B84007EDFD8 /* Main.storyboard */,
 				7EF659F525D87B86007EDFD8 /* Assets.xcassets */,
 				7EF659F725D87B86007EDFD8 /* LaunchScreen.storyboard */,
@@ -421,14 +471,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EA1EE3125D894F200A2BE06 /* DateHelpers.swift in Sources */,
+				7EA1EE4525D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift in Sources */,
+				7EA1EE4825D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift in Sources */,
 				7EA1EE2425D8867500A2BE06 /* UITableView+DefaultCell.swift in Sources */,
 				7EA1EE2925D8869F00A2BE06 /* UITableView+EmptyMessage.swift in Sources */,
 				7EA1EE3725D89BCE00A2BE06 /* ListingItemTableViewCell.swift in Sources */,
+				7EA1EE4025D8B2E600A2BE06 /* StatusEnum.swift in Sources */,
+				7EA1EE3E25D8B2B700A2BE06 /* AbstractViewModel.swift in Sources */,
 				7EF659F125D87B83007EDFD8 /* HomeViewController.swift in Sources */,
 				7EA1EE1A25D8818A00A2BE06 /* Endpoint.swift in Sources */,
 				7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */,
 				7EA1EE2725D8869000A2BE06 /* UITableView+ActivityIndicator.swift in Sources */,
+				7EA1EE4325D8B6A500A2BE06 /* HomeItemDetailsViewController.swift in Sources */,
 				7EA1EE3425D8984800A2BE06 /* ListingItemCellProtocol.swift in Sources */,
+				7EA1EE3C25D8B27A00A2BE06 /* HomeViewModel.swift in Sources */,
 				7EA1EE1C25D881C600A2BE06 /* HomeEndpoints.swift in Sources */,
 				7EA1EE1E25D8828900A2BE06 /* HomeService.swift in Sources */,
 				7EA1EE2C25D88AF900A2BE06 /* Launch.swift in Sources */,
