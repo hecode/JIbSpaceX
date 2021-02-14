@@ -65,10 +65,10 @@ extension HomeViewController {
         }
         .disposed(by: disposeBag)
         
-        //        homeViewModel.launches.subscribe { _ in
-        //            self.homeViewModel.launches ? tableView.setEmptyMessage("No Launches found") :  tableView.removeMessage()
-        //        }
-//            .disposed(by: DisposeBag())
+        homeViewModel.launches.subscribe { _ in
+           try? self.homeViewModel.launches.value().count < 1 ? self.tableView.setEmptyMessage("No Launches found") : self.tableView.removeMessage()
+        }
+        .disposed(by: DisposeBag())
         
         tableView.rx.modelSelected(Launch.self)
             .subscribe(onNext: { [weak self] model in
