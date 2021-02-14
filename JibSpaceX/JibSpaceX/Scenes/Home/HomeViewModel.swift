@@ -8,11 +8,12 @@
 
 import Foundation
 import Alamofire
+import RxSwift
 
 class HomeViewModel: AbstractViewModel {
     var homeService: HomeServiceProtocol = HomeService()
     
-    var launches = Array<Launch>()
+    var launches = BehaviorSubject<[Launch]>(value: [])
 }
 
 // MARK: - Network -
@@ -21,7 +22,7 @@ extension HomeViewModel {
     
     func resetAndLoadHomeItems() {
         // if this was cached/saved locally we could load it here while making the new request
-        launches = []
+        launches.onNext([])
         loadHomeItems()
     }
     
@@ -38,29 +39,11 @@ extension HomeViewModel {
                 return
             }
             
-            self.launches = launches
+            self.launches.onNext(launches)
             
             self.delegate?.updateUI(data: nil, status: .success, actionSource: nil)
         }
         
-    }
-    
-}
-
-// MARK: - Helpers -
-
-extension HomeViewModel {
-    
-    func launchItemForRow(row: Int) -> Launch? {
-        if row < launches.count{
-            return launches[row]
-        } else {
-            return nil
-        }
-    }
-    
-    func getLaunchesCount() -> Int {
-        return launches.count
     }
     
 }

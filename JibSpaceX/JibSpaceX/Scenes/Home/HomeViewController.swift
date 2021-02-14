@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
     let listingItemTableViewCellName = String(describing: ListingItemTableViewCell.self)
+    
+    let disposeBag = DisposeBag()
     
     let homeViewModel = HomeViewModel()
     
@@ -45,18 +49,40 @@ extension HomeViewController {
         title = "Filtered Launches"
         
         homeViewModel.delegate = self
+        
     }
     
     func setupTableView() {
-        tableView.dataSource = self
-        tableView.delegate = self
-        
         tableView.register(UINib(nibName: listingItemTableViewCellName, bundle: nil), forCellReuseIdentifier: listingItemTableViewCellName)
         
         tableView.estimatedRowHeight = 90
         tableView.rowHeight = UITableView.automaticDimension
         
         tableView.backgroundView = nil
+        
+        homeViewModel.launches.bind(to: tableView.rx.items(cellIdentifier: listingItemTableViewCellName, cellType: ListingItemTableViewCell.self)) { index, model, cell in
+            cell.config(with: model)
+        }
+        .disposed(by: disposeBag)
+        
+        //        homeViewModel.launches.subscribe { _ in
+        //            self.homeViewModel.launches ? tableView.setEmptyMessage("No Launches found") :  tableView.removeMessage()
+        //        }
+//            .disposed(by: DisposeBag())
+        
+        tableView.rx.modelSelected(Launch.self)
+            .subscribe(onNext: { [weak self] model in
+                guard let self = self else { return }
+                
+                guard let homeItemDetailsViewController = Constants.Storyboards.mainStoryboard.instantiateViewController(withIdentifier: Constants.Storyboards.MainStoryboardIDs.HomeItemDetailsViewController.rawValue) as? HomeItemDetailsViewController else {
+                    return
+                }
+                
+                homeItemDetailsViewController.homeItemDetailsViewModel.rocketID = model.rocketID
+                
+                self.navigationController?.pushViewController(homeItemDetailsViewController, animated: true)
+                
+            }).disposed(by: disposeBag)
         
         tableView.refreshControl = UIRefreshControl()
         
@@ -67,44 +93,6 @@ extension HomeViewController {
         homeViewModel.resetAndLoadHomeItems()
     }
     
-    func emptyListMessageChecker() {
-        if homeViewModel.getLaunchesCount() == 0 {
-            tableView.setEmptyMessage("No Launches found")
-        } else {
-            tableView.removeMessage()
-        }
-    }
-    
-}
-
-// MARK: - UITableViewDataSource -
-
-extension HomeViewController: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return homeViewModel.getLaunchesCount()
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        if let cell = tableView.dequeueReusableCell(withIdentifier: listingItemTableViewCellName) as? ListingItemTableViewCell {
-            cell.selectionStyle = UITableViewCell.SelectionStyle.none
-            
-            if let productItem = homeViewModel.launchItemForRow(row: indexPath.row) {
-                cell.config(with: productItem)
-            }
-            
-            return cell
-        } else {
-            return tableView.defaultCell()
-        }
-    }
-    
 }
 
 // MARK: - UITableViewDelegate -
@@ -112,17 +100,7 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let homeItemDetailsViewController = Constants.Storyboards.mainStoryboard.instantiateViewController(withIdentifier: Constants.Storyboards.MainStoryboardIDs.HomeItemDetailsViewController.rawValue) as? HomeItemDetailsViewController else {
-            return
-        }
         
-        guard let launch = homeViewModel.launchItemForRow(row: indexPath.row) else {
-            return
-        }
-        
-        homeItemDetailsViewController.homeItemDetailsViewModel.rocketID = launch.rocketID
-        
-        self.navigationController?.pushViewController(homeItemDetailsViewController, animated: true)
     }
     
 }
@@ -141,16 +119,10 @@ extension HomeViewController: ViewModelUIDelegate {
             tableView.showActivityIndicator()
             
         case .success:
-            tableView.hideActivityIndicator()
-            tableView.reloadData()
-            
-            emptyListMessageChecker()
+            tableView.hideActivityIndicator()            
             
         case .error(let message):
             tableView.hideActivityIndicator()
-            tableView.reloadData()
-            
-            emptyListMessageChecker()
             
             let alert = UIAlertController(title: "Request Error", message: message, preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
