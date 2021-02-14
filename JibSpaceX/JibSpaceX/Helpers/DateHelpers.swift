@@ -22,7 +22,7 @@ func yearsBetweenDates(startDate: Date?, endDate: Date?) -> Int {
     }
     
     let calendar = NSCalendar.current
-    let difference = calendar.dateComponents([.nanosecond], from: startDate, to: endDate)
+    let difference = calendar.dateComponents([.year], from: startDate, to: endDate)
 
     return difference.year ?? 0
 }

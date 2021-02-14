@@ -120,7 +120,6 @@ extension HomeViewController: UITableViewDelegate {
             return
         }
         
-        print(launch.rocketID)
         homeItemDetailsViewController.homeItemDetailsViewModel.rocketID = launch.rocketID
         
         self.navigationController?.pushViewController(homeItemDetailsViewController, animated: true)
