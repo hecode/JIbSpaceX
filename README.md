@@ -29,7 +29,7 @@
 
 Demo (slow and flickery due to slow machine + simulator + recording + gif):
 
-![](https://i.imgur.com/20lH6Lq.gif)
+![](https://media.giphy.com/media/H5jGylXfJwRilI6Qa2/giphy.gif)
 
 #### Notes:
 - Used storyboard as required since there is very limited views.
