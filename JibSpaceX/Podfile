@@ -9,6 +9,7 @@ target 'JibSpaceX' do
   pod "Alamofire"
   pod "ImageSlideshow/SDWebImage"
   pod "RxSwift"
+  pod "RxCocoa"
   pod "ObjectMapper"
 
   target 'JibSpaceXTests' do
