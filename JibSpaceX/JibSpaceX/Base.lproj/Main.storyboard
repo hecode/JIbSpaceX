@@ -85,7 +85,6 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX7-Ph-B7f">
                                                         <rect key="frame" x="0.0" y="0.0" width="71.5" height="50"/>
-                                                        <accessibility key="accessibilityConfiguration" identifier="productItemDetailsTitle"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="OKF-ln-gRS"/>
                                                         </constraints>
