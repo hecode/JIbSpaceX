@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>validJSON</key>
+	<string> {
+        &quot;fairings&quot;: null,
+        &quot;links&quot;: {
+            &quot;patch&quot;: {
+                &quot;small&quot;: &quot;https://images2.imgbox.com/53/22/dh0XSLXO_o.png&quot;,
+                &quot;large&quot;: &quot;https://images2.imgbox.com/15/2b/NAcsTEB6_o.png&quot;
+            },
+            &quot;reddit&quot;: {
+                &quot;campaign&quot;: &quot;https://www.reddit.com/r/spacex/comments/ezn6n0/crs20_launch_campaign_thread&quot;,
+                &quot;launch&quot;: &quot;https://www.reddit.com/r/spacex/comments/fe8pcj/rspacex_crs20_official_launch_discussion_updates/&quot;,
+                &quot;media&quot;: &quot;https://www.reddit.com/r/spacex/comments/fes64p/rspacex_crs20_media_thread_videos_images_gifs/&quot;,
+                &quot;recovery&quot;: null
+            },
+            &quot;flickr&quot;: {
+                &quot;small&quot;: [],
+                &quot;original&quot;: [
+                    &quot;https://live.staticflickr.com/65535/49635401403_96f9c322dc_o.jpg&quot;,
+                    &quot;https://live.staticflickr.com/65535/49636202657_e81210a3ca_o.jpg&quot;,
+                    &quot;https://live.staticflickr.com/65535/49636202572_8831c5a917_o.jpg&quot;,
+                    &quot;https://live.staticflickr.com/65535/49635401423_e0bef3e82f_o.jpg&quot;,
+                    &quot;https://live.staticflickr.com/65535/49635985086_660be7062f_o.jpg&quot;
+                ]
+            },
+            &quot;presskit&quot;: &quot;https://www.spacex.com/sites/spacex/files/crs-20_mission_press_kit.pdf&quot;,
+            &quot;webcast&quot;: &quot;https://youtu.be/1MkcWK2PnsU&quot;,
+            &quot;youtube_id&quot;: &quot;1MkcWK2PnsU&quot;,
+            &quot;article&quot;: &quot;https://spaceflightnow.com/2020/03/07/late-night-launch-of-spacex-cargo-ship-marks-end-of-an-era/&quot;,
+            &quot;wikipedia&quot;: &quot;https://en.wikipedia.org/wiki/SpaceX_CRS-20&quot;
+        },
+        &quot;static_fire_date_utc&quot;: &quot;2020-03-01T10:20:00.000Z&quot;,
+        &quot;static_fire_date_unix&quot;: 1583058000,
+        &quot;tdb&quot;: false,
+        &quot;net&quot;: false,
+        &quot;window&quot;: 0,
+        &quot;rocket&quot;: &quot;5e9d0d95eda69973a809d1ec&quot;,
+        &quot;success&quot;: true,
+        &quot;failures&quot;: [],
+        &quot;details&quot;: &quot;SpaceX&apos;s 20th and final Crew Resupply Mission under the original NASA CRS contract, this mission brings essential supplies to the International Space Station using SpaceX&apos;s reusable Dragon spacecraft. It is the last scheduled flight of a Dragon 1 capsule. (CRS-21 and up under the new Commercial Resupply Services 2 contract will use Dragon 2.) The external payload for this mission is the Bartolomeo ISS external payload hosting platform. Falcon 9 and Dragon will launch from SLC-40, Cape Canaveral Air Force Station and the booster will land at LZ-1. The mission will be complete with return and recovery of the Dragon capsule and down cargo.&quot;,
+        &quot;crew&quot;: [],
+        &quot;ships&quot;: [],
+        &quot;capsules&quot;: [
+            &quot;5e9e2c5cf359185d753b266f&quot;
+        ],
+        &quot;payloads&quot;: [
+            &quot;5eb0e4d0b6c3bb0006eeb253&quot;
+        ],
+        &quot;launchpad&quot;: &quot;5e9e4501f509094ba4566f84&quot;,
+        &quot;auto_update&quot;: true,
+        &quot;flight_number&quot;: 91,
+        &quot;name&quot;: &quot;CRS-20&quot;,
+        &quot;date_utc&quot;: &quot;2020-03-07T04:50:31.000Z&quot;,
+        &quot;date_unix&quot;: 1583556631,
+        &quot;date_local&quot;: &quot;2020-03-06T23:50:31-05:00&quot;,
+        &quot;date_precision&quot;: &quot;hour&quot;,
+        &quot;upcoming&quot;: false,
+        &quot;cores&quot;: [
+            {
+                &quot;core&quot;: &quot;5e9e28a7f359187afd3b2662&quot;,
+                &quot;flight&quot;: 2,
+                &quot;gridfins&quot;: true,
+                &quot;legs&quot;: true,
+                &quot;reused&quot;: true,
+                &quot;landing_attempt&quot;: true,
+                &quot;landing_success&quot;: true,
+                &quot;landing_type&quot;: &quot;RTLS&quot;,
+                &quot;landpad&quot;: &quot;5e9e3032383ecb267a34e7c7&quot;
+            }
+        ],
+        &quot;id&quot;: &quot;5eb87d42ffd86e000604b384&quot;
+    }</string>
+	<key>emptyJSON</key>
+	<string>{ }</string>
+</dict>
+</plist>
