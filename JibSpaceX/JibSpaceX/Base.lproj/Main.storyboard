@@ -59,16 +59,19 @@
         <!--Home Item Details View Controller-->
         <scene sceneID="YlJ-1Q-UKe">
             <objects>
-                <viewController storyboardIdentifier="ProductItemDetailsViewController" automaticallyAdjustsScrollViewInsets="NO" id="FEx-PU-Afa" customClass="HomeItemDetailsViewController" customModule="JibSpaceX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeItemDetailsViewController" automaticallyAdjustsScrollViewInsets="NO" id="FEx-PU-Afa" customClass="HomeItemDetailsViewController" customModule="JibSpaceX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qsw-D0-AEj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bZh-QU-1Uk">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                            </activityIndicatorView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoV-0X-O5r">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8cU-xi-Yo3">
-                                        <rect key="frame" x="15" y="15" width="384" height="342.5"/>
+                                        <rect key="frame" x="15" y="15" width="384" height="359"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFG-C7-5lB" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="258"/>
@@ -77,18 +80,44 @@
                                                     <constraint firstAttribute="width" secondItem="PFG-C7-5lB" secondAttribute="height" multiplier="277:186" id="Tkh-1i-BOo"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX7-Ph-B7f">
-                                                <rect key="frame" x="0.0" y="273" width="384" height="33.5"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="productItemDetailsTitle"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39J-Ox-u6N">
+                                                <rect key="frame" x="0.0" y="273" width="384" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX7-Ph-B7f">
+                                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="50"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="productItemDetailsTitle"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="OKF-ln-gRS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxT-Vh-H4A">
+                                                        <rect key="frame" x="344" y="5" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="PPV-Tk-Epp"/>
+                                                            <constraint firstAttribute="height" constant="40" id="nFM-Af-taU"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button" image="wikipedia_globe_icon"/>
+                                                        <connections>
+                                                            <action selector="wikipediaAction:" destination="FEx-PU-Afa" eventType="touchUpInside" id="Axb-cz-lEf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="OKF-ln-gRS"/>
+                                                    <constraint firstItem="fX7-Ph-B7f" firstAttribute="top" secondItem="39J-Ox-u6N" secondAttribute="top" id="EkD-MC-MlE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fX7-Ph-B7f" secondAttribute="bottom" id="HV4-zS-rAw"/>
+                                                    <constraint firstItem="RxT-Vh-H4A" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fX7-Ph-B7f" secondAttribute="trailing" constant="8" id="Oi9-vj-6WG"/>
+                                                    <constraint firstItem="fX7-Ph-B7f" firstAttribute="leading" secondItem="39J-Ox-u6N" secondAttribute="leading" id="UAa-eY-UQj"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="gG9-wT-s27"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RxT-Vh-H4A" secondAttribute="trailing" id="odj-lo-tip"/>
+                                                    <constraint firstItem="RxT-Vh-H4A" firstAttribute="centerY" secondItem="fX7-Ph-B7f" secondAttribute="centerY" id="qKV-l6-HwZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tel-fY-Ld5">
-                                                <rect key="frame" x="0.0" y="321.5" width="384" height="21"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tel-fY-Ld5">
+                                                <rect key="frame" x="0.0" y="338" width="384" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Xxw-L9-Z8Z"/>
                                                 </constraints>
@@ -112,21 +141,28 @@
                             <constraint firstItem="RoV-0X-O5r" firstAttribute="leading" secondItem="Qsw-D0-AEj" secondAttribute="leading" id="02O-6K-4Om"/>
                             <constraint firstItem="8cU-xi-Yo3" firstAttribute="leading" secondItem="JQa-L3-kaW" secondAttribute="leading" constant="15" id="42x-o9-q8B"/>
                             <constraint firstItem="JQa-L3-kaW" firstAttribute="trailing" secondItem="8cU-xi-Yo3" secondAttribute="trailing" constant="15" id="6Pe-nD-1uW"/>
+                            <constraint firstItem="bZh-QU-1Uk" firstAttribute="centerY" secondItem="JQa-L3-kaW" secondAttribute="centerY" id="CSD-zF-ev2"/>
                             <constraint firstAttribute="trailing" secondItem="RoV-0X-O5r" secondAttribute="trailing" id="D0u-lh-oJc"/>
                             <constraint firstItem="RoV-0X-O5r" firstAttribute="bottom" secondItem="JQa-L3-kaW" secondAttribute="bottom" id="FJf-1L-ERe"/>
                             <constraint firstItem="RoV-0X-O5r" firstAttribute="top" secondItem="JQa-L3-kaW" secondAttribute="top" id="Q9Q-dm-avz"/>
+                            <constraint firstItem="bZh-QU-1Uk" firstAttribute="centerX" secondItem="JQa-L3-kaW" secondAttribute="centerX" id="dpx-pS-poT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JQa-L3-kaW"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="bZh-QU-1Uk" id="gif-V1-HWx"/>
+                        <outlet property="descriptionLabel" destination="tel-fY-Ld5" id="dAa-TI-PUK"/>
                         <outlet property="imageSlideshow" destination="PFG-C7-5lB" id="hzq-lF-CCk"/>
-                        <outlet property="priceLabel" destination="tel-fY-Ld5" id="r4U-lz-Cmi"/>
-                        <outlet property="titleLabel" destination="fX7-Ph-B7f" id="TNQ-p9-bXK"/>
+                        <outlet property="nameLabel" destination="fX7-Ph-B7f" id="RSo-lg-741"/>
+                        <outlet property="wikipediaButton" destination="RxT-Vh-H4A" id="fEB-4u-PhL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9id-TA-t1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="129"/>
+            <point key="canvasLocation" x="2083" y="104"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wikipedia_globe_icon" width="96" height="96"/>
+    </resources>
 </document>

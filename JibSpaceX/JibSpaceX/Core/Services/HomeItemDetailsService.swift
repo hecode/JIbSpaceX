@@ -22,11 +22,11 @@ class HomeItemDetailsService: HomeItemDetailsServiceProtocol {
     func getHomeItemDetails(id: String, completion: @escaping (Rocket?, Error?) -> Void) {
         // check for internet connection / load cache before request
         
-        guard let url = URL(string: Constants.baseUrl + Endpoint.homeItemDetailsEndpoints.homeItemDetailsEndpoint) else {
+        guard let url = URL(string: Constants.baseUrl + Endpoint.homeItemDetailsEndpoints.homeItemDetailsEndpoint + "/\(id)") else {
             return
         }
         
-        AF.request(url, method: HTTPMethod.get, parameters: ["id": id], encoding: URLEncoding.default, headers: ["Content-Type": "application/json"]).responseJSON{ response in
+        AF.request(url, method: HTTPMethod.get, parameters: [:], encoding: URLEncoding.default, headers: ["Content-Type": "application/json"]).responseJSON{ response in
             
             switch response.result {
             case .success(let value):

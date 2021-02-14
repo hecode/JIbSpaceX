@@ -116,6 +116,13 @@ extension HomeViewController: UITableViewDelegate {
             return
         }
         
+        guard let launch = homeViewModel.launchItemForRow(row: indexPath.row) else {
+            return
+        }
+        
+        print(launch.rocketID)
+        homeItemDetailsViewController.homeItemDetailsViewModel.rocketID = launch.rocketID
+        
         self.navigationController?.pushViewController(homeItemDetailsViewController, animated: true)
     }
     
