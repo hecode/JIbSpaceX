@@ -11,7 +11,7 @@ import ImageSlideshow
 import RxSwift
 
 class HomeItemDetailsViewModel {
-    var homeItemDetailsService: HomeItemDetailsService = HomeItemDetailsService()
+    var homeItemDetailsService: HomeItemDetailsServiceProtocol = HomeItemDetailsService()
     
     var rocketID: String = ""
     var rocket = BehaviorSubject<Rocket>(value: Rocket())
