@@ -30,6 +30,7 @@
 		7EA1EE4A25D8D58400A2BE06 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4925D8D58400A2BE06 /* Rocket.swift */; };
 		7EA1EE4C25D8D74B00A2BE06 /* HomeItemDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4B25D8D74B00A2BE06 /* HomeItemDetailsService.swift */; };
 		7EA1EE4E25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4D25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift */; };
+		7EA1EE5025D911AB00A2BE06 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4F25D911AA00A2BE06 /* Errors.swift */; };
 		7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */; };
 		7EF659F125D87B83007EDFD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659F025D87B83007EDFD8 /* HomeViewController.swift */; };
 		7EF659F425D87B84007EDFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F225D87B84007EDFD8 /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		7EA1EE4925D8D58400A2BE06 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		7EA1EE4B25D8D74B00A2BE06 /* HomeItemDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsService.swift; sourceTree = "<group>"; };
 		7EA1EE4D25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsEndpoints.swift; sourceTree = "<group>"; };
+		7EA1EE4F25D911AA00A2BE06 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		7EF659E925D87B83007EDFD8 /* JibSpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JibSpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EF659F025D87B83007EDFD8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				7EA1EE2025D8837800A2BE06 /* Constants.swift */,
 				7EA1EE3D25D8B2B700A2BE06 /* AbstractViewModel.swift */,
 				7EA1EE3F25D8B2E600A2BE06 /* StatusEnum.swift */,
+				7EA1EE4F25D911AA00A2BE06 /* Errors.swift */,
 				7EA1EE3025D894F200A2BE06 /* DateHelpers.swift */,
 				7EA1EE3225D8983200A2BE06 /* Protocols */,
 				7EA1EE2225D8865500A2BE06 /* Extensions */,
@@ -488,6 +491,7 @@
 				7EA1EE3125D894F200A2BE06 /* DateHelpers.swift in Sources */,
 				7EA1EE4525D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift in Sources */,
 				7EA1EE4825D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift in Sources */,
+				7EA1EE5025D911AB00A2BE06 /* Errors.swift in Sources */,
 				7EA1EE4A25D8D58400A2BE06 /* Rocket.swift in Sources */,
 				7EA1EE2425D8867500A2BE06 /* UITableView+DefaultCell.swift in Sources */,
 				7EA1EE2925D8869F00A2BE06 /* UITableView+EmptyMessage.swift in Sources */,

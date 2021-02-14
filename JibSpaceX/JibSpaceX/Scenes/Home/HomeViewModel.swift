@@ -36,6 +36,7 @@ extension HomeViewModel {
         homeService.getHomeItems { (launchesResult, error) in
             guard let launches = launchesResult, error == nil else {
                 self.delegate?.updateUI(data: nil, status: .error(message: error?.localizedDescription ?? Constants.genericAPIErrorMessage), actionSource: nil)
+                self.launches.onError(error ?? Errors.apiError())
                 return
             }
             

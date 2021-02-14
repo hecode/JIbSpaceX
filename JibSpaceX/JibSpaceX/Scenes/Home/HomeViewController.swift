@@ -26,6 +26,8 @@ class HomeViewController: UIViewController {
         basicSetup()
         
         setupTableView()
+        
+        setupRx()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,15 +62,29 @@ extension HomeViewController {
         
         tableView.backgroundView = nil
         
+        tableView.refreshControl = UIRefreshControl()
+        
+        tableView.refreshControl?.addTarget(self, action: #selector(self.refresh), for: .valueChanged)
+    }
+    
+    func setupRx() {
         homeViewModel.launches.bind(to: tableView.rx.items(cellIdentifier: listingItemTableViewCellName, cellType: ListingItemTableViewCell.self)) { index, model, cell in
             cell.config(with: model)
         }
         .disposed(by: disposeBag)
         
         homeViewModel.launches.subscribe { _ in
-           try? self.homeViewModel.launches.value().count < 1 ? self.tableView.setEmptyMessage("No Launches found") : self.tableView.removeMessage()
+            try? self.homeViewModel.launches.value().count < 1 ? self.tableView.setEmptyMessage("No Launches found") : self.tableView.removeMessage()
         }
         .disposed(by: DisposeBag())
+        
+        homeViewModel.launches.subscribe(onError: { _ in
+            // this could be a general helper alert
+            let alert = UIAlertController(title: "Request Error", message: Constants.genericAPIErrorMessage, preferredStyle: UIAlertController.Style.alert)
+            let alertAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            alert.addAction(alertAction)
+            self.present(alert, animated: true, completion: nil) }
+        ).disposed(by: disposeBag)
         
         tableView.rx.modelSelected(Launch.self)
             .subscribe(onNext: { [weak self] model in
@@ -82,11 +98,10 @@ extension HomeViewController {
                 
                 self.navigationController?.pushViewController(homeItemDetailsViewController, animated: true)
                 
-            }).disposed(by: disposeBag)
+                }
+        ).disposed(by: disposeBag)
         
-        tableView.refreshControl = UIRefreshControl()
         
-        tableView.refreshControl?.addTarget(self, action: #selector(self.refresh), for: .valueChanged)
     }
     
     @objc func refresh(refreshControl: UIRefreshControl){
@@ -123,11 +138,6 @@ extension HomeViewController: ViewModelUIDelegate {
             
         case .error(let message):
             tableView.hideActivityIndicator()
-            
-            let alert = UIAlertController(title: "Request Error", message: message, preferredStyle: UIAlertController.Style.alert)
-            let alertAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
-            alert.addAction(alertAction)
-            self.present(alert, animated: true, completion: nil)
             
         default:
             return
