@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import RxSwift
 
-class HomeViewModel: AbstractViewModel {
+class HomeViewModel {
     var homeService: HomeServiceProtocol = HomeService()
     
     var launches = BehaviorSubject<[Launch]>(value: [])
@@ -27,22 +27,16 @@ extension HomeViewModel {
     }
     
     func loadHomeItems() {
-        // fetching animation
-        delegate?.updateUI(data: nil, status: .fetching, actionSource: nil)
-        
         // Adding caching would be helpful
         // networking should be separate as a service and other services that need can use it and it would have the general error handling and messages, and auth/refresh token where applicable, etc.
         
         homeService.getHomeItems { (launchesResult, error) in
             guard let launches = launchesResult, error == nil else {
-                self.delegate?.updateUI(data: nil, status: .error(message: error?.localizedDescription ?? Constants.genericAPIErrorMessage), actionSource: nil)
                 self.launches.onError(error ?? Errors.apiError())
                 return
             }
             
             self.launches.onNext(launches)
-            
-            self.delegate?.updateUI(data: nil, status: .success, actionSource: nil)
         }
         
     }

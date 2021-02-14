@@ -37,6 +37,7 @@ class HomeViewController: UIViewController {
         
         if !checkPoppedBackFromVCToVC(fromControllerType: HomeItemDetailsViewController.self,
                                       toControllerType: HomeViewController.self) {
+            tableView.showActivityIndicator()
             homeViewModel.resetAndLoadHomeItems()
         }
     }
@@ -49,9 +50,6 @@ extension HomeViewController {
     
     func basicSetup() {
         title = "Filtered Launches"
-        
-        homeViewModel.delegate = self
-        
     }
     
     func setupTableView() {
@@ -70,13 +68,16 @@ extension HomeViewController {
     func setupRx() {
         homeViewModel.launches.bind(to: tableView.rx.items(cellIdentifier: listingItemTableViewCellName, cellType: ListingItemTableViewCell.self)) { index, model, cell in
             cell.config(with: model)
+            cell.selectionStyle = .none
         }
         .disposed(by: disposeBag)
         
         homeViewModel.launches.subscribe { _ in
             try? self.homeViewModel.launches.value().count < 1 ? self.tableView.setEmptyMessage("No Launches found") : self.tableView.removeMessage()
+            
+            self.tableView.hideActivityIndicator()
         }
-        .disposed(by: DisposeBag())
+        .disposed(by: disposeBag)
         
         homeViewModel.launches.subscribe(onError: { _ in
             // this could be a general helper alert
@@ -100,49 +101,10 @@ extension HomeViewController {
                 
                 }
         ).disposed(by: disposeBag)
-        
-        
     }
     
     @objc func refresh(refreshControl: UIRefreshControl){
         homeViewModel.resetAndLoadHomeItems()
-    }
-    
-}
-
-// MARK: - UITableViewDelegate -
-
-extension HomeViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
-}
-
-// MARK: - ViewModelUIDelegate -
-
-extension HomeViewController: ViewModelUIDelegate {
-    
-    func updateUI(data: Any?, status: StatusEnum?, actionSource: String?) {
-        tableView.refreshControl?.endRefreshing()
-        
-        guard let status = status else { return }
-        
-        switch status {
-        case .fetching:
-            tableView.showActivityIndicator()
-            
-        case .success:
-            tableView.hideActivityIndicator()            
-            
-        case .error(let message):
-            tableView.hideActivityIndicator()
-            
-        default:
-            return
-        }
-        
     }
     
 }
