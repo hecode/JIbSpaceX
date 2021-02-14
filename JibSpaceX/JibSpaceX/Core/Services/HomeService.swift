@@ -39,7 +39,7 @@ class HomeService: HomeServiceProtocol {
                 let launches = Mapper<Launch>().mapArray(JSONArray: value)
                 
                 // filtered to only successful and within past 3 years as per requirements.
-                // note that there is an indicator for launches with upcoming that changes text and color but they don't appear in this demo under the requirements.
+                // note that there is an indicator for launches with upcoming that changes text and color but they don't appear in this demo under the requirements. (there are no launches that satisfiy being successful and within the past 3 years and has upcoming)
                 let filteredLaunches = launches.filter { $0.successful == true && yearsBetweenDates(startDate: $0.date, endDate: Date()) < 3 }
        
                 completion(filteredLaunches, nil)
