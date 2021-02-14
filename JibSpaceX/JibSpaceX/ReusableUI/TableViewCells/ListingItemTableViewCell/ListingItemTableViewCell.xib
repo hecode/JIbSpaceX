@@ -43,7 +43,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="y5T-ju-gtE" firstAttribute="leading" secondItem="s1c-7l-pA3" secondAttribute="leading" constant="5" id="AUt-se-4WU"/>
                                             <constraint firstItem="y5T-ju-gtE" firstAttribute="top" secondItem="s1c-7l-pA3" secondAttribute="top" constant="5" id="TmO-j7-Fk8"/>
@@ -60,7 +60,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="rhp-Ep-xfT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="rhp-Ep-xfT"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mej-Kv-VUe">
