@@ -7,7 +7,7 @@ target 'JibSpaceX' do
 
   # Pods for JibSpaceX
   pod "Alamofire"
-  pod "SDWebImage"
+  pod "ImageSlideshow/SDWebImage"
   pod "RxSwift"
   pod "ObjectMapper"
 
