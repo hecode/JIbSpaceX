@@ -49,6 +49,16 @@
                ReferencedContainer = "container:JibSpaceX.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7EA1EE6425D9628400A2BE06"
+               BuildableName = "JibSpaceXUITests.xctest"
+               BlueprintName = "JibSpaceXUITests"
+               ReferencedContainer = "container:JibSpaceX.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
