@@ -76,6 +76,7 @@ extension HomeViewController {
             try? self.homeViewModel.launches.value().count < 1 ? self.tableView.setEmptyMessage("No Launches found") : self.tableView.removeMessage()
             
             self.tableView.hideActivityIndicator()
+            self.tableView.refreshControl?.endRefreshing()
         }
         .disposed(by: disposeBag)
         
