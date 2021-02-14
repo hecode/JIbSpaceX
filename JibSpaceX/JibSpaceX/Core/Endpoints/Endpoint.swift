@@ -11,5 +11,6 @@ import Foundation
 struct Endpoint {
     
     static let homeEndpoints = HomeEndpoints.self
+    static let homeItemDetailsEndpoints = HomeItemDetailsEndpoints.self
 
 }

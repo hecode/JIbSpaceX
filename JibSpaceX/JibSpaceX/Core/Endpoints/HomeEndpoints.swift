@@ -9,7 +9,7 @@
 import Foundation
 
 struct HomeEndpoints {
-    
+
     static let homeAPIVersion = "v4"
     
     static let homeItemsEndpoint = "\(homeAPIVersion)/launches"

@@ -27,6 +27,9 @@
 		7EA1EE4325D8B6A500A2BE06 /* HomeItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4225D8B6A500A2BE06 /* HomeItemDetailsViewController.swift */; };
 		7EA1EE4525D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4425D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift */; };
 		7EA1EE4825D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4725D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift */; };
+		7EA1EE4A25D8D58400A2BE06 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4925D8D58400A2BE06 /* Rocket.swift */; };
+		7EA1EE4C25D8D74B00A2BE06 /* HomeItemDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4B25D8D74B00A2BE06 /* HomeItemDetailsService.swift */; };
+		7EA1EE4E25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EE4D25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift */; };
 		7EF659ED25D87B83007EDFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */; };
 		7EF659F125D87B83007EDFD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF659F025D87B83007EDFD8 /* HomeViewController.swift */; };
 		7EF659F425D87B84007EDFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF659F225D87B84007EDFD8 /* Main.storyboard */; };
@@ -67,6 +70,9 @@
 		7EA1EE4225D8B6A500A2BE06 /* HomeItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsViewController.swift; sourceTree = "<group>"; };
 		7EA1EE4425D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsViewModel.swift; sourceTree = "<group>"; };
 		7EA1EE4725D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+FromToChecker.swift"; sourceTree = "<group>"; };
+		7EA1EE4925D8D58400A2BE06 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		7EA1EE4B25D8D74B00A2BE06 /* HomeItemDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsService.swift; sourceTree = "<group>"; };
+		7EA1EE4D25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailsEndpoints.swift; sourceTree = "<group>"; };
 		7EF659E925D87B83007EDFD8 /* JibSpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JibSpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EF659F025D87B83007EDFD8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 			children = (
 				7EA1EE1925D8818A00A2BE06 /* Endpoint.swift */,
 				7EA1EE1B25D881C600A2BE06 /* HomeEndpoints.swift */,
+				7EA1EE4D25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				7EA1EE1D25D8828800A2BE06 /* HomeService.swift */,
+				7EA1EE4B25D8D74B00A2BE06 /* HomeItemDetailsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -175,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				7EA1EE2B25D88AF900A2BE06 /* Launch.swift */,
+				7EA1EE4925D8D58400A2BE06 /* Rocket.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -271,12 +280,12 @@
 			isa = PBXGroup;
 			children = (
 				7EF659EC25D87B83007EDFD8 /* AppDelegate.swift */,
+				7EF659F225D87B84007EDFD8 /* Main.storyboard */,
 				7EA1EE1625D8814C00A2BE06 /* Core */,
 				7EA1EE1F25D8836200A2BE06 /* Helpers */,
 				7EA1EE2A25D88AE900A2BE06 /* Models */,
 				7EA1EE2D25D8904200A2BE06 /* ReusableUI */,
 				7EA1EE3925D8B26000A2BE06 /* Scenes */,
-				7EF659F225D87B84007EDFD8 /* Main.storyboard */,
 				7EF659F525D87B86007EDFD8 /* Assets.xcassets */,
 				7EF659F725D87B86007EDFD8 /* LaunchScreen.storyboard */,
 				7EF659FA25D87B86007EDFD8 /* Info.plist */,
@@ -429,6 +438,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JibSpaceX/Pods-JibSpaceX-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -436,6 +446,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -473,6 +484,7 @@
 				7EA1EE3125D894F200A2BE06 /* DateHelpers.swift in Sources */,
 				7EA1EE4525D8B74A00A2BE06 /* HomeItemDetailsViewModel.swift in Sources */,
 				7EA1EE4825D8B8BD00A2BE06 /* UIViewController+FromToChecker.swift in Sources */,
+				7EA1EE4A25D8D58400A2BE06 /* Rocket.swift in Sources */,
 				7EA1EE2425D8867500A2BE06 /* UITableView+DefaultCell.swift in Sources */,
 				7EA1EE2925D8869F00A2BE06 /* UITableView+EmptyMessage.swift in Sources */,
 				7EA1EE3725D89BCE00A2BE06 /* ListingItemTableViewCell.swift in Sources */,
@@ -484,8 +496,10 @@
 				7EA1EE2725D8869000A2BE06 /* UITableView+ActivityIndicator.swift in Sources */,
 				7EA1EE4325D8B6A500A2BE06 /* HomeItemDetailsViewController.swift in Sources */,
 				7EA1EE3425D8984800A2BE06 /* ListingItemCellProtocol.swift in Sources */,
+				7EA1EE4E25D8D7B300A2BE06 /* HomeItemDetailsEndpoints.swift in Sources */,
 				7EA1EE3C25D8B27A00A2BE06 /* HomeViewModel.swift in Sources */,
 				7EA1EE1C25D881C600A2BE06 /* HomeEndpoints.swift in Sources */,
+				7EA1EE4C25D8D74B00A2BE06 /* HomeItemDetailsService.swift in Sources */,
 				7EA1EE1E25D8828900A2BE06 /* HomeService.swift in Sources */,
 				7EA1EE2C25D88AF900A2BE06 /* Launch.swift in Sources */,
 				7EA1EE2125D8837800A2BE06 /* Constants.swift in Sources */,
