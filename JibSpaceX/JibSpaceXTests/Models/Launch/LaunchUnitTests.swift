@@ -12,7 +12,6 @@ import XCTest
 class LaunchUnitTests: XCTestCase {
     
     func testSuccessLaunchInit() {
-        
         guard let path = Bundle(for: LaunchUnitTests.self).path(forResource: "LaunchesJSONs", ofType: "plist"),
             let nsDictionary = NSDictionary(contentsOfFile: path)  else {
                 XCTFail()
@@ -41,7 +40,6 @@ class LaunchUnitTests: XCTestCase {
     }
     
     func testFailedLaunchInit() {
-        
         guard let path = Bundle(for: LaunchUnitTests.self).path(forResource: "LaunchesJSONs", ofType: "plist"),
             let nsDictionary = NSDictionary(contentsOfFile: path)  else {
                 XCTFail()

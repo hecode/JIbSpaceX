@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>validJSON</key>
+	<string>{
+    &quot;height&quot;: {
+      &quot;meters&quot;: 70,
+      &quot;feet&quot;: 229.6
+    },
+    &quot;diameter&quot;: {
+      &quot;meters&quot;: 12.2,
+      &quot;feet&quot;: 39.9
+    },
+    &quot;mass&quot;: {
+      &quot;kg&quot;: 1420788,
+      &quot;lb&quot;: 3125735
+    },
+    &quot;first_stage&quot;: {
+      &quot;thrust_sea_level&quot;: {
+        &quot;kN&quot;: 22819,
+        &quot;lbf&quot;: 5130000
+      },
+      &quot;thrust_vacuum&quot;: {
+        &quot;kN&quot;: 24681,
+        &quot;lbf&quot;: 5548500
+      },
+      &quot;reusable&quot;: true,
+      &quot;engines&quot;: 27,
+      &quot;fuel_amount_tons&quot;: 1155,
+      &quot;burn_time_sec&quot;: 162
+    },
+    &quot;second_stage&quot;: {
+      &quot;thrust&quot;: {
+        &quot;kN&quot;: 934,
+        &quot;lbf&quot;: 210000
+      },
+      &quot;payloads&quot;: {
+        &quot;composite_fairing&quot;: {
+          &quot;height&quot;: {
+            &quot;meters&quot;: 13.1,
+            &quot;feet&quot;: 43
+          },
+          &quot;diameter&quot;: {
+            &quot;meters&quot;: 5.2,
+            &quot;feet&quot;: 17.1
+          }
+        },
+        &quot;option_1&quot;: &quot;dragon&quot;
+      },
+      &quot;reusable&quot;: false,
+      &quot;engines&quot;: 1,
+      &quot;fuel_amount_tons&quot;: 90,
+      &quot;burn_time_sec&quot;: 397
+    },
+    &quot;engines&quot;: {
+      &quot;isp&quot;: {
+        &quot;sea_level&quot;: 288,
+        &quot;vacuum&quot;: 312
+      },
+      &quot;thrust_sea_level&quot;: {
+        &quot;kN&quot;: 845,
+        &quot;lbf&quot;: 190000
+      },
+      &quot;thrust_vacuum&quot;: {
+        &quot;kN&quot;: 914,
+        &quot;lbf&quot;: 205500
+      },
+      &quot;number&quot;: 27,
+      &quot;type&quot;: &quot;merlin&quot;,
+      &quot;version&quot;: &quot;1D+&quot;,
+      &quot;layout&quot;: &quot;octaweb&quot;,
+      &quot;engine_loss_max&quot;: 6,
+      &quot;propellant_1&quot;: &quot;liquid oxygen&quot;,
+      &quot;propellant_2&quot;: &quot;RP-1 kerosene&quot;,
+      &quot;thrust_to_weight&quot;: 180.1
+    },
+    &quot;landing_legs&quot;: {
+      &quot;number&quot;: 12,
+      &quot;material&quot;: &quot;carbon fiber&quot;
+    },
+    &quot;payload_weights&quot;: [
+      {
+        &quot;id&quot;: &quot;leo&quot;,
+        &quot;name&quot;: &quot;Low Earth Orbit&quot;,
+        &quot;kg&quot;: 63800,
+        &quot;lb&quot;: 140660
+      },
+      {
+        &quot;id&quot;: &quot;gto&quot;,
+        &quot;name&quot;: &quot;Geosynchronous Transfer Orbit&quot;,
+        &quot;kg&quot;: 26700,
+        &quot;lb&quot;: 58860
+      },
+      {
+        &quot;id&quot;: &quot;mars&quot;,
+        &quot;name&quot;: &quot;Mars Orbit&quot;,
+        &quot;kg&quot;: 16800,
+        &quot;lb&quot;: 37040
+      },
+      {
+        &quot;id&quot;: &quot;pluto&quot;,
+        &quot;name&quot;: &quot;Pluto Orbit&quot;,
+        &quot;kg&quot;: 3500,
+        &quot;lb&quot;: 7720
+      }
+    ],
+    &quot;flickr_images&quot;: [
+      &quot;https://farm5.staticflickr.com/4599/38583829295_581f34dd84_b.jpg&quot;,
+      &quot;https://farm5.staticflickr.com/4645/38583830575_3f0f7215e6_b.jpg&quot;,
+      &quot;https://farm5.staticflickr.com/4696/40126460511_b15bf84c85_b.jpg&quot;,
+      &quot;https://farm5.staticflickr.com/4711/40126461411_aabc643fd8_b.jpg&quot;
+    ],
+    &quot;name&quot;: &quot;Falcon Heavy&quot;,
+    &quot;type&quot;: &quot;rocket&quot;,
+    &quot;active&quot;: true,
+    &quot;stages&quot;: 2,
+    &quot;boosters&quot;: 2,
+    &quot;cost_per_launch&quot;: 90000000,
+    &quot;success_rate_pct&quot;: 100,
+    &quot;first_flight&quot;: &quot;2018-02-06&quot;,
+    &quot;country&quot;: &quot;United States&quot;,
+    &quot;company&quot;: &quot;SpaceX&quot;,
+    &quot;wikipedia&quot;: &quot;https://en.wikipedia.org/wiki/Falcon_Heavy&quot;,
+    &quot;description&quot;: &quot;With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost.&quot;,
+    &quot;id&quot;: &quot;5e9d0d95eda69974db09d1ed&quot;
+  }</string>
+	<key>emptyJSON</key>
+	<string>{ }</string>
+</dict>
+</plist>
