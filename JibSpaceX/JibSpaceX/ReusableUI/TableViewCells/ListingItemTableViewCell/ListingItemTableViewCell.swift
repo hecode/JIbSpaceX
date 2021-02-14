@@ -71,7 +71,6 @@ class ListingItemTableViewCell: UITableViewCell {
         }
         
         if listingItem.details.isEmpty {
-            self.detailsLabel.isHidden = true
             detailsLabel.superview?.isHidden = true
         } else {
             self.detailsLabel.text = listingItem.details
